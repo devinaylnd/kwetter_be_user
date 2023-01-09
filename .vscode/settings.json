@@ -1,0 +1,5 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "bin\\Release\\net6.0\\publish",
+    "appService.defaultWebAppToDeploy": "/subscriptions/4353c1af-87ad-4fbe-89b1-84536aec3682/appservices/subscriptions/4353c1af-87ad-4fbe-89b1-84536aec3682/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/dev-kwetter"
+}
