@@ -10,16 +10,19 @@ namespace kwetter_user.Controllers;
 public class UserController : Controller
 {
     private readonly IUserService _service;
+    private readonly ILogger _logger;
 
     public UserController(ILogger<UserController> logger, IConfiguration configuration, ApplicationDbContext context, IUserService service)
     {
         _service       = service;
+        _logger = logger;
     }
 
     [HttpPost]
     [Route("create")]
     public async Task<ActionResult<UserResponse>> CreateUser(CreateUserRequest data)
     {
+        _logger.LogInformation("Create new user at {DT}", DateTime.UtcNow.ToLongTimeString());
         var user = await _service.CreateUser(new UserEntity
         {
             email = data.email,
@@ -40,6 +43,7 @@ public class UserController : Controller
     [Route("edit")]
     public async Task<ActionResult<UserResponse>> EditUser(EditUserRequest data)
     {
+        _logger.LogInformation("Edit user data at {DT}", DateTime.UtcNow.ToLongTimeString());
         var user = await _service.EditUser(new UserEntity
         {
             id = data.id,
@@ -61,6 +65,7 @@ public class UserController : Controller
     [Route("{id}")]
     public async Task<ActionResult<UserResponse>> GetUser(int id)
     {
+        _logger.LogInformation("Get user data at {DT}", DateTime.UtcNow.ToLongTimeString());
         var user = await _service.GetUser(id);
 
         if (user == null) { return NotFound(); }
@@ -71,6 +76,7 @@ public class UserController : Controller
     [Route("{id}")]
     public async Task<IActionResult> DeleteUser(int id)
     {
+        _logger.LogInformation("Delete user data at {DT}", DateTime.UtcNow.ToLongTimeString());
         var user = await _service.DeleteUser(id);
 
         if (!user) { return NotFound(); }
