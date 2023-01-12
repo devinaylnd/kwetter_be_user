@@ -48,6 +48,16 @@ public class UserService : IUserService
         catch (Exception) { return null; }
     }
 
+    public async Task<UserEntity?> GetUserByEmail(UserEntity data)
+    {
+        try
+        {
+            var user = await _context.users.Where(q => q.email == data.email).FirstOrDefaultAsync();
+            return user;
+        }
+        catch (Exception) { return null; }
+    }
+
     public async Task<bool> DeleteUser(int id)
     {
         var user = await GetUser(id);

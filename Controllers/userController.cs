@@ -72,6 +72,21 @@ public class UserController : Controller
         return Ok(new UserResponse(user));
     }
 
+    [HttpGet]
+    [Route("getUserByEmail")]
+    public async Task<ActionResult<UserResponse>> GetUserByEmail(GetUserByEmailRequest data)
+    {
+        _logger.LogInformation("Get user data by email at {DT}", DateTime.UtcNow.ToLongTimeString());
+        var user = await _service.GetUserByEmail(new UserEntity
+        {
+            email = data.email,
+            
+        });
+
+        if (user == null) { return NotFound(); }
+        return Ok(new UserResponse(user));
+    }
+
     [HttpDelete]
     [Route("{id}")]
     public async Task<IActionResult> DeleteUser(int id)

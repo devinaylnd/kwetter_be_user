@@ -7,6 +7,6 @@ public interface IUserService
     Task<UserEntity?> CreateUser(UserEntity data);
     Task<UserEntity?> EditUser(UserEntity data);
     Task<UserEntity?> GetUser(int id);
-    // Task<UserEntity?> GetUsername(String username);
+    Task<UserEntity?> GetUserByEmail(UserEntity data);
     Task<bool> DeleteUser(int id);
 }
