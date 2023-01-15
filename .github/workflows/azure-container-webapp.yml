@@ -18,14 +18,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Update database
-      working-directory: src/kwetter_be_user
-      run: |
-        dotnet tool install --global dotnet-ef
-        dotnet tool restore
-        dotnet ef database update
-      env:
-        ASPNETCORE_ENVIRONMENT: Development
     - uses: actions/checkout@v3
     - name: Docker login
       env:
