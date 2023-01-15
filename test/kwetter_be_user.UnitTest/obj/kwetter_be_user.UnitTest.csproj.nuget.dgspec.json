@@ -1,0 +1,165 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\test\\kwetter_be_user.UnitTest\\kwetter_be_user.UnitTest.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\src\\kwetter_be_user\\kwetter_user.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\src\\kwetter_be_user\\kwetter_user.csproj",
+        "projectName": "kwetter_user",
+        "projectPath": "C:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\src\\kwetter_be_user\\kwetter_user.csproj",
+        "packagesPath": "C:\\Users\\macul\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\src\\kwetter_be_user\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\macul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\test\\kwetter_be_user.UnitTest\\kwetter_be_user.UnitTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\test\\kwetter_be_user.UnitTest\\kwetter_be_user.UnitTest.csproj",
+        "projectName": "kwetter_be_user.UnitTest",
+        "projectPath": "C:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\test\\kwetter_be_user.UnitTest\\kwetter_be_user.UnitTest.csproj",
+        "packagesPath": "C:\\Users\\macul\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\test\\kwetter_be_user.UnitTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\macul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\src\\kwetter_be_user\\kwetter_user.csproj": {
+                "projectPath": "C:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\src\\kwetter_be_user\\kwetter_user.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.3.2, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.3, )"
+            },
+            "NUnit.Analyzers": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.2.1, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
