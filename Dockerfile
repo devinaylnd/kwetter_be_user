@@ -32,5 +32,6 @@ RUN dotnet publish -c Release -o out
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.0-alpine AS runtime
 WORKDIR /app
 COPY --from=publish /app/src/kwetter_be_user/out ./
+ENV ASPNETCORE_URLS=http://+:80
 EXPOSE 80
-ENTRYPOINT ["dotnet", "kwetter_be_user.dll"]
+ENTRYPOINT ["dotnet", "kwetter_user.dll"]
