@@ -22,7 +22,7 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Update database
-      working-directory: ./src/kwetter_be_user
+      working-directory: src/kwetter_be_user
       run: |
         dotnet tool install --global dotnet-ef
         dotnet tool restore
