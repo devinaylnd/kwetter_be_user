@@ -1,9 +1,4 @@
-<<<<<<< HEAD
 FROM mcr.microsoft.com/dotnet/core/sdk:3.0-alpine AS build
-=======
-# syntax=docker/dockerfile:1
-FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-env
->>>>>>> origin/main
 WORKDIR /app
 COPY *.sln .
 COPY src/kwetter_be_user/*.csproj ./src/kwetter_be_user/
