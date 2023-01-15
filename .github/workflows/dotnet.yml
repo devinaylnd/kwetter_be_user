@@ -27,10 +27,10 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Update database
-      run: |
+      script: |
         dotnet tool install --global dotnet-ef
         dotnet tool restore
-        dotnet ef database update
+        cd src/kwetter_be_user && dotnet ef database update
       env:
         ASPNETCORE_ENVIRONMENT: Development
     - name: Dependency Check
