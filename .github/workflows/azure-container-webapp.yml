@@ -1,4 +1,4 @@
-name: Build and deploy a container to an Azure Web App
+name: Build, Deploy, Test
 
 env:
   AZURE_WEBAPP_NAME: dev-kwetter
@@ -16,7 +16,6 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
     - name: Docker login
@@ -47,3 +46,11 @@ jobs:
           app-name: 'dev-kwetter'
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           images: '${{secrets.DOCKER_USER}}/user-image'
+  
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Component Test
+        working-directory: test/kwetter_be_user.ComponentTest
+        run: |
+          dotnet test
