@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:3.0-alpine AS build
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /app
 COPY *.sln .
 COPY src/kwetter_be_user/*.csproj ./src/kwetter_be_user/
@@ -29,9 +29,9 @@ WORKDIR /app/src/kwetter_be_user
 RUN dotnet publish -c Release -o out
 
 # run the api
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.0-alpine AS runtime
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 as runtime
 WORKDIR /app
 COPY --from=publish /app/src/kwetter_be_user/out ./
-ENV ASPNETCORE_URLS=http://+:80
+# ENV ASPNETCORE_URLS=http://+:80
 EXPOSE 80
 ENTRYPOINT ["dotnet", "kwetter_user.dll"]
