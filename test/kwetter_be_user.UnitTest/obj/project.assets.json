@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {
+    "net6.0": {
       "coverlet.collector/3.1.2": {
         "type": "package",
         "build": {
@@ -4954,7 +4954,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net7.0": [
+    "net6.0": [
       "Microsoft.NET.Test.Sdk >= 17.3.2",
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.3.0",
@@ -4969,29 +4969,29 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\test\\kwetter_be_user.UnitTest\\kwetter_be_user.UnitTest.csproj",
+      "projectUniqueName": "c:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\test\\kwetter_be_user.UnitTest\\kwetter_be_user.UnitTest.csproj",
       "projectName": "kwetter_be_user.UnitTest",
-      "projectPath": "C:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\test\\kwetter_be_user.UnitTest\\kwetter_be_user.UnitTest.csproj",
+      "projectPath": "c:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\test\\kwetter_be_user.UnitTest\\kwetter_be_user.UnitTest.csproj",
       "packagesPath": "C:\\Users\\macul\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\test\\kwetter_be_user.UnitTest\\obj\\",
+      "outputPath": "c:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\test\\kwetter_be_user.UnitTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\macul\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net7.0"
+        "net6.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\src\\kwetter_be_user\\kwetter_user.csproj": {
-              "projectPath": "C:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\src\\kwetter_be_user\\kwetter_user.csproj"
+            "c:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\src\\kwetter_be_user\\kwetter_user.csproj": {
+              "projectPath": "c:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\src\\kwetter_be_user\\kwetter_user.csproj"
             }
           }
         }
@@ -5003,8 +5003,8 @@
       }
     },
     "frameworks": {
-      "net7.0": {
-        "targetAlias": "net7.0",
+      "net6.0": {
+        "targetAlias": "net6.0",
         "dependencies": {
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",

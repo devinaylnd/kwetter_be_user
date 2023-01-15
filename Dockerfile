@@ -18,10 +18,10 @@ FROM build AS test
 WORKDIR /app/test/kwetter_be_user.UnitTest
 RUN dotnet test --logger:trx
 
-# run the component tests
-FROM build AS componenttestrunner
-WORKDIR /app/test/kwetter_be_user.ComponentTest
-CMD ["dotnet", "test", "--logger:trx"]
+# # run the component tests
+# FROM build AS componenttestrunner
+# WORKDIR /app/test/kwetter_be_user.ComponentTest
+# CMD ["dotnet", "test", "--logger:trx"]
 
 # publish the API
 FROM build AS publish

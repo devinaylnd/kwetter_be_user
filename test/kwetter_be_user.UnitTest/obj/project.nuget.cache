@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UoLDTFwE7D7vSRurgJBpwIMoSa6R37ZXz5+R28VuWrw2Di8WxdufPtm7LT4xCzRGsA06DxKn+XnvjQQk4fs1xw==",
+  "dgSpecHash": "DEGVZ5bOkOBNR7T8kdEN7rw6dYgTChxWcplIleK7i/EqhHAGZN2eOrjkakLcrvNjXBnzUsdVchsz4anv6DDJrA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\test\\kwetter_be_user.UnitTest\\kwetter_be_user.UnitTest.csproj",
+  "projectFilePath": "c:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\test\\kwetter_be_user.UnitTest\\kwetter_be_user.UnitTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\macul\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\macul\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

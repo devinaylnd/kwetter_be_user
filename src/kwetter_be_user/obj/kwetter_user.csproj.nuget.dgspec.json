@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\src\\kwetter_be_user\\kwetter_user.csproj": {}
+    "c:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\src\\kwetter_be_user\\kwetter_user.csproj": {}
   },
   "projects": {
-    "C:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\src\\kwetter_be_user\\kwetter_user.csproj": {
+    "c:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\src\\kwetter_be_user\\kwetter_user.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\src\\kwetter_be_user\\kwetter_user.csproj",
+        "projectUniqueName": "c:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\src\\kwetter_be_user\\kwetter_user.csproj",
         "projectName": "kwetter_user",
-        "projectPath": "C:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\src\\kwetter_be_user\\kwetter_user.csproj",
+        "projectPath": "c:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\src\\kwetter_be_user\\kwetter_user.csproj",
         "packagesPath": "C:\\Users\\macul\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\src\\kwetter_be_user\\obj\\",
+        "outputPath": "c:\\Users\\macul\\OneDrive\\Desktop\\temp\\kwetter_be_user\\src\\kwetter_be_user\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\macul\\AppData\\Roaming\\NuGet\\NuGet.Config",
