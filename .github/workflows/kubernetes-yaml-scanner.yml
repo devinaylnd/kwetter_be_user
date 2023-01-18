@@ -5,10 +5,10 @@ jobs:
   kubescape:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - uses: kubescape/github-action@main
-      continue-on-error: true
-      with:
-        format: sarif
-        outputFile: results.sarif
-        files: "src/kwetter_be_user/deployment.yaml"
+    - name: Clone repo
+      uses: actions/checkout@master
+    - name: Install kubescape
+      run: curl -s https://raw.githubusercontent.com/armosec/kubescape/master/install.sh | /bin/bash
+    - name: Scan repository
+      working-directory: src/kwetter_be_user
+      run: kubescape scan deployment.yaml
